@@ -1,0 +1,103 @@
+@charset 'utf-8';
+
+body,ul,h1,table,form {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.title, .calendar, .form {
+    text-align: center;
+}
+
+/* タイトル */
+body {
+    background-color: rgb(245,253,255);
+    font-family: "SF Pro JP", "SF Pro Text", "SF Pro Icons", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", メイリオ, Meiryo, "ＭＳ Ｐゴシック", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+h1 {
+    font-size: 36px;
+    color: rgb(2,69,153);
+    text-shadow: 2px 2px 5px rgb(88, 138, 199);
+}
+h1 > small {
+    font-size: 24px;
+}
+.img {
+    background-image: url(https://www.pakutaso.com/shared/img/thumb/N811_chirabattakokkicard_TP_V.jpg);
+    background-color: rgba(255, 255, 255, .2);
+    background-blend-mode: lighten;
+    height: 500px;
+    width: 100%;
+    background-size: cover;
+}
+/* カレンダー */
+.row {
+    background-color: #fff;
+}
+table {
+    font-size: 18px;
+    text-align: center;
+}
+th,td {
+    padding: 6px;
+}
+th {
+    color: rgb(2,69,153);
+    text-shadow: 1px 0 5px #fff;
+    font-weight: 700;
+}
+td {
+    color: #fff;
+    text-shadow: 1px 0 3px rgb(2,69,153);
+}
+.today {
+    font-size: 24px;
+    text-shadow: 1px 0 5px #000;
+    font-weight: 700;
+}
+.disabled {
+    opacity: .3;
+}
+
+td:first-child {
+    color: #fff;
+    text-shadow: 1px 0 5px rgb(242,81,150);
+}
+td:last-child {
+    color: #fff;
+    text-shadow: 1px 0 5px rgb(59, 101, 153);
+}
+
+/* セレクトフォーム */
+
+/* 結果 */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul > li {
+    margin-top: 14px;
+    border-bottom: 1px solid rgb(2,69,153);
+    color: rgb(2,69,153);
+}
+ul > li:first-child {
+    margin-top: 0;
+    text-align: center;
+    font-size: 28px;
+    border: none;
+    font-weight: 700;
+    color: rgb(2,69,153);
+}
+ul span {
+    font-size: 18px;
+}
+#app ul img {
+    display: inline-block;
+    height: 40px;
+}
+.open-weather-map {
+    text-align: center;
+    line-height: 1.6;
+}
